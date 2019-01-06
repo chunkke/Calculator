@@ -71,7 +71,7 @@
 				bl.num2 = String(Number(bl.num2) * Number(bl.num3));
 				break;	
 			case '÷':
-				if (!Number(bl.num3)) {
+				if (!Number(bl.num1)) {
 					bl.num2 = '0';
 					break;
 				}
@@ -100,7 +100,6 @@
 		}
 		output.innerHTML = bl.num2;
 		bl.num1 = '';
-		console.log(bl.num2, bl.num3);
 	}
 	//功能键识别函数
 	let ct = (n) => {
